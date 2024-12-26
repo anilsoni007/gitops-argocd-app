@@ -3,12 +3,14 @@ kind: Application
 metadata:
   name: my-app-argo
   namespace: machina-sbx
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
+  description: argocd-declartive-app-project
   project: default
-
   source:
     repoURL: https://github.com/anilsoni007/gitops-argocd-app.git  
-    targetRevision: HEAD  
+    targetRevision: main  
     path: ./declarative
 
   destination:

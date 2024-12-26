@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/anilsoni007/gitops-argocd-app.git
     targetRevision: main
-    path: ./declarative
+    path: ./argo-app/declarative
    
   destination:
     server: https://kubernetes.default.svc

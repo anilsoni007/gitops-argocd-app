@@ -25,4 +25,4 @@ spec:
       volumes:
       - name: app-secret-vol
         secret:
-          secretName: app-crds
+          secretName: app-sealed-secret
